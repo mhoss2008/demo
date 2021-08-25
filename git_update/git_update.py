@@ -1,4 +1,4 @@
-"""template for python scripts"""
+"""develop testing"""
 from datetime import datetime
 import git
 MODE = "debug"
