@@ -10,7 +10,7 @@ def main():
     script to daily pull an updated repo
     use git reset --hard if the repo is out of sync
     '''
-    repo = git.Repo("/Users/matthew.hoss/testing/demo")  # ex. "/User/some_user/some_dir"
+    repo = git.Repo("~/Git/demo")  # ex. "/User/some_user/some_dir"
     o = repo.remotes.origin
     print (o)
     fetch_data = o.fetch()
