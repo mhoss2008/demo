@@ -6,13 +6,12 @@ MODE = "debug"
 
 
 def main():
-    repo = git.Repo("/Users/matthew.hoss/demos/demo")
-    print (repo.is_dirty())
-    repo_push = repo.push('origin','main')
-    print (repo_push)
-    """main function"""
-    clear_log()
-    #g = git.cmd.Git()
+    repo = git.Repo("/Users/matthew.hoss/testing/demo")  # ex. "/User/some_user/some_dir"
+    origin = repo.remote("origin")  
+    assert origin.exists()
+    origin.fetch()
+    pulled = repo.git.pull("/Users/matthew.hoss/testing/demo")
+    print (pulled)
     
     log("this is a test")
 
