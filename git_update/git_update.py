@@ -13,7 +13,7 @@ def main():
     pulled = repo.git.pull("/Users/matthew.hoss/testing/demo")
     print (pulled)
     
-    log("this is a test")
+    log("this is a test2")
 
 
 def clear_log():
