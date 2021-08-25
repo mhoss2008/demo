@@ -6,16 +6,13 @@ MODE = "debug"
 
 
 def main():
+    '''
+    script to daily pull an updated repo
+    use git reset --hard if the repo is out of sync
+    '''
     repo = git.Repo("/Users/matthew.hoss/testing/demo")  # ex. "/User/some_user/some_dir"
     o = repo.remotes.origin
-    pulled = o.pull()
-    #origin = repo.remote("origin")  
-    #assert origin.exists()
-    #origin.fetch()
-    #pulled = repo.git.pull("/Users/matthew.hoss/testing/demo")
-    print (pulled)
-    print ("test6")
-    #log("this is a test2")
+    o.pull()
 
 
 def clear_log():
