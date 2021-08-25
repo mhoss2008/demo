@@ -17,6 +17,7 @@ def main():
     print (fetch_data)
     pulled_data = o.pull()
     print (pulled_data)
+    print("test11")
 
 
 def clear_log():
