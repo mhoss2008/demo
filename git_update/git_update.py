@@ -7,10 +7,12 @@ MODE = "debug"
 
 def main():
     repo = git.Repo("/Users/matthew.hoss/testing/demo")  # ex. "/User/some_user/some_dir"
-    origin = repo.remote("origin")  
-    assert origin.exists()
-    origin.fetch()
-    pulled = repo.git.pull("/Users/matthew.hoss/testing/demo")
+    o = repo.remotes.origin
+    pulled = o.pull()
+    #origin = repo.remote("origin")  
+    #assert origin.exists()
+    #origin.fetch()
+    #pulled = repo.git.pull("/Users/matthew.hoss/testing/demo")
     print (pulled)
     print ("test4")
     #log("this is a test2")
