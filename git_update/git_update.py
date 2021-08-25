@@ -14,7 +14,7 @@ def main():
     #origin.fetch()
     #pulled = repo.git.pull("/Users/matthew.hoss/testing/demo")
     print (pulled)
-    print ("test4")
+    print ("test5")
     #log("this is a test2")
 
 
