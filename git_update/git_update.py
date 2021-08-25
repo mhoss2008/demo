@@ -12,7 +12,11 @@ def main():
     '''
     repo = git.Repo("/Users/matthew.hoss/testing/demo")  # ex. "/User/some_user/some_dir"
     o = repo.remotes.origin
-    o.pull()
+    print (o)
+    fetch_data = o.fetch()
+    print (fetch_data)
+    pulled_data = o.pull()
+    print (pulled_data)
 
 
 def clear_log():
